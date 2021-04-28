@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 84px;
+  }
+
+  .catalog__item {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .item__body {
+    padding: 16px 17px 12px 16px;
+    max-height: 99px;
+  }
+
+  .item__title {
+    font-size: 27px;
+    line-height: 33.43px;
+    padding: 0px 0px 9px 0px;
+    max-height: 39px;
+  }
+
+  .item__text {
+    font-size: 14px;
+    line-height: 20.44px;
+    max-height: 33px;
+  }
+
+  .text__author {
+    flex: 0 1 179px;
+  }
+
+  .text__discipline {
+    flex: 0 1 171px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px calc(30px + (84 - 30) * ( (100vw - 992px) / ( 1440 - 992) ));
+  }
+
+  .catalog__item {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .item__body {
+    padding: calc(6px + (16 - 6) * ( (100vw - 992px) / ( 1440 - 992) )) 17px 12px 16px;
+    max-height: 99px;
+  }
+
+  .item__title {
+    font-size: calc(18px + (27 - 18) * ( (100vw - 992px) / ( 1440 - 992) ));
+    line-height: 33.43px;
+    padding: 0px 0px 9px 0px;
+    max-height: 39px;
+  }
+
+  .item__text {
+    font-size: calc(11px + (14 - 11) * ( (100vw - 992px) / ( 1440 - 992) ));
+    line-height: 20.44px;
+    max-height: 33px;
+  }
+
+  .text__author {
+    flex: 0 1 179px;
+  }
+
+  .text__discipline {
+    flex: 0 1 171px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* */
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* */
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* */
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* */
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(../../fonts/Gilroy-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(../../fonts/Verdana.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Verdana-Bold";
+  src: url(../../fonts/Verdana_Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33%;
+  margin: 0px 4px 4px 0px;
+}
+.catalog__item:nth-child(3n) {
+  margin: 0px 0px 4px 0px;
+}
+
+.item__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item__body {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.item__title {
+  font-family: "Gilroy-Bold";
+}
+
+.item__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Verdana";
+}
+
+.text__discipline {
+  text-align: right;
+}
+
+.slider {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 35px 0px 0px 0px;
+}
+
+.slider__counter {
+  font-family: "Verdana-Bold";
+  font-size: 13px;
+  font-weight: 15, 8px;
+  letter-spacing: 0.075em;
+  margin: 0px 28px 0px 0px;
+}
+
+.slider__switch {
+  display: flex;
+  justify-content: end;
+}
+
+.switch__button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left {
+  margin: 0px 17px 0px 0px;
+}
+
+.right {
+  transform: rotate(180deg);
+}
